@@ -116,3 +116,24 @@ body{
         height: 110px;
     }  
 }
+@media only screen and (min-width:2560px) {
+    .container{
+        width: 90vw;
+    }
+    img{
+        height: 100px;
+        margin-bottom: 30px !important;
+    }
+    h1{
+        font-size: 50px;
+        font-weight: 800;
+    }
+    .sedans p, .suvs p, .luxury p{
+        height: 180px;
+        font-size: 35px;
+        line-height: 2.4rem;
+    }
+    button{
+        font-size: 35px;
+    }  
+}
