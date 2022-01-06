@@ -1,0 +1,118 @@
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--Very-light-gray);
+}
+.container{
+    display: flex;
+    width: 70vw;
+    margin: auto;
+    margin-top: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.sedans{
+    background-color: var(--Bright-orange);
+    padding: 25px;
+}
+.suvs{
+    background-color: var(--Dark-cyan);
+    padding: 25px;
+}
+.luxury{
+    background-color: var(--Very-dark-cyan);
+    padding: 25px;
+}
+.sedans button{
+    color: var(--Bright-orange);
+}
+.suvs button{
+    color: var(--Dark-cyan);
+}
+.luxury{
+    color: var(--Very-dark-cyan);
+}
+.sedans img, .suvs img, .luxury img{
+    margin-bottom: 15px;
+}
+.sedans h1, .suvs h1, .luxury h1{
+    color: var(--Very-light-gray);
+    text-transform:uppercase;
+}
+.sedans p, .suvs p, .luxury p{
+    color: var(--Very-light-gray);
+    height: max-content;
+    padding: 20px 10px 0 0;
+    line-height: 1.3rem;
+    word-spacing: 2px;
+    height: 130px;
+    text-align: start;
+}
+.sedans button, .suvs button, .luxury button{
+    background-color: var(--Very-light-gray);
+    border: none;
+    padding: 10px 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.attribution { font-size: 14px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+@media only screen and (max-width:425px) {
+    .container{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media only screen and (min-width:320px) {
+    .sedans p, .suvs p, .luxury p{
+        height: 160px;
+    }   
+}
+@media only screen and (min-width:375px) {
+    .sedans p, .suvs p, .luxury p{
+        height: 140px;
+    }   
+}
+@media only screen and (min-width:425px) {
+    .sedans p, .suvs p, .luxury p{
+        height: 120px;
+    }   
+}
+@media only screen and (min-width:768px) {
+    .container{
+        width: 90vw;
+    }
+    .sedans p, .suvs p, .luxury p{
+        height: 160px;
+    }  
+}
+@media only screen and (min-width:1024px) {
+    .container{
+        width: 90vw;
+    }
+    .sedans p, .suvs p, .luxury p{
+        height: 120px;
+    }  
+}
+@media only screen and (min-width:1440px) {
+    .container{
+        width: 80vw;
+    }
+    .sedans p, .suvs p, .luxury p{
+        height: 110px;
+    }  
+}
